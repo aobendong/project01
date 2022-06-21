@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jqr.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color:burlywood;
+    }
+    img{
+        width: 80px;
+        height: 80px;
+    }
+    .chart img{
+        width: 80px;
+        height: 80px;
+    }
+    .zong{
+        margin: 80px auto;
+        width: 800px;
+        height: 1000px;
+    }
+    .head{
+        height: 90px;
+        width: auto;
+        background-color: rgba(92, 18, 18, 0.651);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px 15px 0px 0px  ;
+    }
+    h2{
+        margin: 0px;
+        color: aliceblue;
+    }
+    .body{
+        height: auto;
+        overflow-y: scroll;
+        padding-left: 0px;
+        height: 900px;
+        width: auto;
+        background-color: antiquewhite;
+        margin-top: 0px;
+        font-size: 30px;
+        scroll-snap-type: proximity;
+    }
+    .chart span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        margin: 15px;
+        padding: 10px 30px;
+
+    }
+    .chart li{
+        margin: 10px 0px;
+    }
+    .jqr{
+        background-color: white;
+    }
+    .ren{
+        background-color: chartreuse;
+    }
+    .jq{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+    .user{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+    }
+    .end{
+        display: flex;
+        height: 100px;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: brown;
+        align-items: center;
+        border-radius: 0px 0px 15px 15px ;
+    }
+    .btn{
+        width: 80px;
+        height: 60px;
+        border-radius: 10px;
+        border: 0px;
+        font-size: larger;
+    }
+    .bttn{
+        transition: all 0.1s;
+        box-shadow: rgba(22, 5, 5, 0.616) 0px 0px 5px 2px;
+        background-color: rgba(0, 255, 13, 0.87);
+        color: white;
+    }
+    .sendin{
+        width: 75%;
+        height: 50px;
+        font-size: 25px;
+        border: 0px;
+    }
+</style>
+<body>
+    <div class="zong">
+        <div class="head">
+            <h2>小邓同学</h2>
+            <img src="新建文件夹\月球.svg" alt="" class="touxiang">
+        </div>
+        <div class="body">
+            <ul class="chart">
+                <li class="jq"><img src="新建文件夹\月球.svg" alt=""><span class="jqr">你好先生</span></li>
+                <li class="user"><span class="ren">我是不是你最爱的人</span><img src="新建文件夹\黎明.svg" alt=""></li>
+            </ul>
+
+        </div>
+        <div class="end">
+            <img src="新建文件夹\黎明.svg" alt="" class="use">
+            <input type="text" class="sendin">
+            <input type="button" value="发送" class="btn">
+        </div>
+    </div>
+</body>
+</html>
